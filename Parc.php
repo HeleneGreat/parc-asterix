@@ -3,14 +3,14 @@
 
 class Parc {
     public string $nom;
-    private array $attractions = [];
+    public array $attractions = [];
 
     public function __construct(string $nom){
         $this->nom = $nom;
     }
     
 
-    // Créer de nouvelles attractions à mon Parc :
+    // Ajouter les nouvelles attractions à mon Parc :
     public function construireAttraction(Attraction $attraction){
         array_push($this->attractions, $attraction);
     }
@@ -55,9 +55,23 @@ class Parc {
         }
     }
 
+    // Enlève des points de maintenance à toutes les attractions
+    public function degrader() {
+        foreach($this->attractions as $attraction){        
+            $attraction->degradation();
+        }
+    }
     
-    
+    // Enlève des points de propreté à toutes les attractions :
+    public function salir() {
+        foreach($this->attractions as $attraction){        
+            $attraction->salete();
+        }
+    }
 
+    
+    
+   
 
 
 }

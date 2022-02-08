@@ -27,13 +27,18 @@ class Attraction {
         return $this->ptProprete += 5;
     }
 
+// Enlève des points de maintenance :
+    public function degradation() {
+        return $this->ptMaintenance -= 5;
+    }
+
 // Enlève des points de propreté (devrait combiner la fonction vomi() de SensationsFortes) :
     public function salete(){
-        return $this-> ;
+        $this->ptProprete -= 5;
+
     }
 
     
-
 
 
 }

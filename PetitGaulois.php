@@ -16,6 +16,9 @@ class PetitGaulois extends Attraction {
         $this->babillage();
     }
 
+    public function miettes(){
+        return $this->ptProprete -= 2;
+    }
 
 
 

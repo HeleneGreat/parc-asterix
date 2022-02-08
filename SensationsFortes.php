@@ -16,12 +16,27 @@ class SensationsFortes extends Attraction {
         $this->rocknroll();
     }
 
-    // Devrait enlevé des points de propreté aux attractions SensationsFortes
+    // Devrait enlever des points de propreté aux attractions SensationsFortes
     public function vomi(){
-
+        $number = random_int(1, 5);
+        if ($number == 5){
+            return $this->ptProprete -= 4 ;
+        }
     }
-
     
+ /*
+    public function salete(){
+        return $this->ptProprete -= 2;
+       
+        if($number != 5){
+        return $this->ptProprete -= 5 ;
+        }
+        else{
+            $this->vomi();
+        }
+        
+    }
+    */
     
 
 

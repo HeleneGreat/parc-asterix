@@ -17,14 +17,24 @@ $asterix->construireAttraction(new PetitGaulois("Goudurix"));
 /*
 $asterix->compterAttraction();
 $asterix->listerAttraction();
-$asterix->reactions();
 
-*/
+$asterix->reactions();
 
 $asterix->reparer();
 $asterix->nettoyer();
 $asterix->nettoyer();
 $asterix->nettoyer();
 $asterix->AfficherInfo();
+// $asterix->salete();
 
 // var_dump($asterix);
+*/
+
+// $asterix->vomir();
+// var_dump($asterix->attractions);
+
+
+
+$asterix->PetitGaulois->miettes();
+
+// $asterix->$SensationsFortes->vomi();
